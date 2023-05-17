@@ -20,7 +20,9 @@ class MainViewController: UIViewController {
     
 //MARK: Functions
     
-
+    func test(ssas:Int) -> Int {
+        return 5
+    }
 
 
 }
