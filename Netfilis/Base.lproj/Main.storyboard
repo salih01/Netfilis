@@ -11,7 +11,7 @@
         <!--Netfiliş-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Netfilis" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Netfilis" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,8 +32,12 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="358" height="350"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="lotr" translatesAutoresizingMaskIntoConstraints="NO" id="QHF-7g-rMJ">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lotr" translatesAutoresizingMaskIntoConstraints="NO" id="QHF-7g-rMJ">
                                                             <rect key="frame" x="0.0" y="0.0" width="358" height="350"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="350" id="Bfa-AO-XMf"/>
+                                                                <constraint firstAttribute="width" constant="358" id="TY8-uZ-qET"/>
+                                                            </constraints>
                                                         </imageView>
                                                         <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zR9-c8-hCn">
                                                             <rect key="frame" x="0.0" y="260" width="358" height="90"/>
@@ -112,6 +116,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Netfiliş" id="QeE-M9-WxL"/>
+                    <connections>
+                        <outlet property="blurView" destination="y5F-eS-IdP" id="cs1-Bo-6Tn"/>
+                        <outlet property="cardView" destination="cBD-s4-9gj" id="Bbf-VH-3Z5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
