@@ -24,5 +24,9 @@ class MainViewController: UIViewController {
         return 5
     }
 
+    func test2(ssas:Int) -> Int {
+        return 7
+    }
+    
 
 }
